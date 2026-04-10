@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  shell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Verify shell syntax
+        run: |
+          bash -n scripts/run_opencode_consult.sh
+          bash -n scripts/selfcheck.sh
+
+      - name: Run self-check
+        env:
+          OPENCODE_BIN: /usr/bin/true
+        run: bash scripts/selfcheck.sh

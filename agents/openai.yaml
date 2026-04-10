@@ -1,0 +1,3 @@
+display_name: OpenCode For Codex
+short_description: Ask OpenCode for a second opinion and archive the result for later threads.
+default_prompt: Consult OpenCode on a blocker, archive the prompt and raw output, then summarize what Codex should adopt or reject.

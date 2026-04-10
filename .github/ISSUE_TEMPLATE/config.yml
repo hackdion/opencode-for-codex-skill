@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Support guidance
+    url: https://github.com/hackdion/opencode-for-codex-skill/blob/main/SUPPORT.md
+    about: Read support routing before opening a new issue.
+  - name: Security policy
+    url: https://github.com/hackdion/opencode-for-codex-skill/blob/main/SECURITY.md
+    about: Use private reporting for vulnerabilities.
